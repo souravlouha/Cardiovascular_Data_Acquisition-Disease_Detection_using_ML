@@ -1,0 +1,7 @@
+%ecg fiducial parameter detection through augumented
+%Pan-tompkins algorithm
+clc
+clearvars 
+close all;
+
+file=uigetfile("*.txt");

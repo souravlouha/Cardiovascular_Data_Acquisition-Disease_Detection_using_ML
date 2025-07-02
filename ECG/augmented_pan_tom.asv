@@ -1,0 +1,45 @@
+% T & P er function ta kora ache , ai file 
+
+
+function [P_value,P_loc,T_value,T_loc]=augmented_pan_tom(x1,R_loc)
+x7=lowpass(x1,0.5);
+for j=1:(length(R_loc)-1)    
+    rang = R_loc(j+1)-R_loc(j);
+    offset = 0;
+    rang = (rang/2) + offset;
+    rang = ceil(rang);
+    mid = R_loc(j)+rang;
+    
+    %for T
+    x8=x7((R_loc(j)+1):mid);
+    [c, d]=findpeaks(x8);
+    cd=[c d];
+    cd=sortrows(cd,1,'descend');
+    if size(cd,1)==1
+        cd1=[cd;cd];
+    elseif size(cd,1)==0
+        cd1=[0 0;0 0];
+    else
+    cd1=cd(1:2,:);
+    end
+    cd1=sortrows(cd1,2);
+    T_value(j)=cd1(2,1);
+    T_loc(j)=cd1(2,2);
+    T_loc(j)=T_loc(j)+R_loc(j);
+    
+    %for P
+    x8=x7((mid+1):(R_loc(j+1)-1));
+    [c, d]=findpeaks(x8);
+    cd=[c d];
+    cd=sortrows(cd,1,'descend');
+    if size(cd,1)==1
+        cd1=[cd;cd];
+    elseif size(cd,1)==0
+        cd1=[0 0;0 0];
+    else
+    cd1=cd(1:2,:);
+    end
+    P_value(j)=cd1(1,1);
+    P_loc(j)=cd1(1,2);
+    P_loc(j)=P_loc(j)+mid;
+end
