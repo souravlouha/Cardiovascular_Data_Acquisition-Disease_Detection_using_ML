@@ -74,12 +74,19 @@ This repository presents a complete MATLAB-based project focused on non-invasive
 ## 📁 Folder Structure
 
 ```plaintext
-├── Day1/                        # Signal filtering, PSD, spike removal
-├── Day2/                        # Feature extraction, CNN training
-├── PCGSegment/                 # Springer segmentation code
-├── adaptive_filter/            # NLMS & Wiener filter implementations
-├── SPARC Workshop_slides.pdf   # Slide guide to all experiments
-├── IET Workshop Pamphlet.pdf   # Event details
+├── seta.txt                           # ✅ Main ECG dataset used in all analysis
+├── ECG01.m                            # 🔹 Final working file — clean ECG processing + output + proper legends
+├── Scratch_ecg.m                      # 🔸 Pan-Tompkins Algorithm + QRS detection + Fiducial parameter extraction
+├── augmented_pan_tom.m               # 🔸 T-wave and P-wave detection functions (augmentation added)
+├── final_output_withPTQRS.png         # 📈 Final output plot showing P, QRS, T clearly
+├── ecg graph.png                      # Raw ECG plot
+├── ECG graph after LPF.png            # After Low Pass Filter
+├── ECG of HPF.png                     # After High Pass Filter
+├── Ecg graph after dc removal.png     # After DC drift removal
+├── Derivative filter.png              # After derivative filtering
+├── Graph after mwi.png                # After Moving Window Integration (MWI)
+├── Subplot.png                        # Combined plot showing all processing stages
+├── cardiomyopathy-20132-0009.-LEAD II_filtered.txt   # Another sample ECG dataset
 ```
 ---
 
@@ -110,13 +117,54 @@ Below are slides summarizing the fundamentals of ECG and its role in AI-based he
 ![Slide 13](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/13.jpg) 
 ![Slide 14](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/14.jpg)
 ![Slide 15](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/15.jpg) 
-![Slide 3](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/16.jpg) 
-![Slide 1](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/1.jpg)
-![Slide 2](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/2.jpg) 
-![Slide 3](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/3.jpg) 
-![Slide 1](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/1.jpg)
-![Slide 2](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/2.jpg) 
-![Slide 3](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/3.jpg) 
+![Slide 16](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/16.jpg) 
+![Slide 17](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/17.jpg)
+![Slide 18](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/18.jpg) 
+![Slide 19](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/19.jpg) 
+![Slide 20](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/20.jpg)
+![Slide 21](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/21.jpg)
+![Slide 22](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/22.jpg) 
+![Slide 23](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/23.jpg) 
+![Slide 24](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/24.jpg)
+![Slide 25](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/25.jpg) 
+![Slide 26](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/26.jpg) 
+![Slide 27](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/27.jpg)
+![Slide 28](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/28.jpg) 
+![Slide 29](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/29.jpg) 
+![Slide 30](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/30.jpg)
+![Slide 31](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/31.jpg)
+![Slide 32](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/32.jpg)
+![Slide 33](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/33.jpg) 
+![Slide 34](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/34.jpg) 
+![Slide 35](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/35.jpg)
+![Slide 36](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/36.jpg) 
+![Slide 37](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/37.jpg) 
+![Slide 38](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/38.jpg)
+![Slide 39](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/39.jpg) 
+![Slide 40](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/40.jpg) 
+![Slide 41](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/ECG/ECG_presentation/41.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
