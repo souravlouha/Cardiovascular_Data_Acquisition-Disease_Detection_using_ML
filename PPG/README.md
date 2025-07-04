@@ -88,4 +88,25 @@ smooth_ppg = movmean(filtered, 10);
 RR_intervals = diff(locs);  % Pulse-to-pulse intervals
 mean_rr = mean(RR_intervals);
 ```
+## 📁 PPG Repository Structure
 
+```plaintext
+├── README.md                               # Project overview, steps, images, and descriptions
+├── Output_images/                          # 📊 Processed waveform plots and analysis visuals
+│   ├── original ppg waveform.png
+│   ├── filtered ppg signal.png
+│   └── ...
+├── NORMAL_PPG_1.txt                        # ✅ Main raw PPG data (unfiltered)
+├── NORMAL_PPG_1_filtered.txt               # Preprocessed (filtered) version of the raw PPG signal
+├── NORMAL_PPG_1__ppg_beat_matrix.txt       # Matrix of beat-to-beat segmented features
+├── NORMAL_PPG_1__ppg_beat_fiducial.xlsx    # Excel file with fiducial points: systolic peak, dicrotic notch, diastolic end
+├── mydata.mat                              # MATLAB structure data (possibly includes all PPG variables)
+├── PPG01.m                                 # Main MATLAB script for PPG signal preprocessing and peak detection
+├── PPG01_Original.m                        # Base version of PPG01.m (used before feature additions)
+├── PPG02.m                                 # Systolic/diastolic peak detection + bandpass filter pipeline
+├── PPG02_Original.m                        # Unmodified version of PPG02 (pre-peak enhancement)
+├── PPG03_Original.m                        # Possibly used for notch/diastolic detection or advanced plotting
+├── *.asv                                   # Autosave backup files from MATLAB (can be ignored/removed)
+```
+
+#
