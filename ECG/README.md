@@ -74,7 +74,7 @@ This repository presents a complete MATLAB-based project focused on non-invasive
 ## 📁 Folder Structure
 
 ```plaintext
-├── seta.txt                           # ✅ Main ECG dataset used in all analysis
+├── cardiomyopathy-20132-0009.-LEAD II_filtered.txt   # ✅ Main ECG dataset used in all analysis
 ├── ECG01.m                            # 🔹 Final working file — clean ECG processing + output + proper legends
 ├── Scratch_ecg.m                      # 🔸 Pan-Tompkins Algorithm + QRS detection + Fiducial parameter extraction
 ├── augmented_pan_tom.m               # 🔸 T-wave and P-wave detection functions (augmentation added)
@@ -86,7 +86,7 @@ This repository presents a complete MATLAB-based project focused on non-invasive
 ├── Derivative filter.png              # After derivative filtering
 ├── Graph after mwi.png                # After Moving Window Integration (MWI)
 ├── Subplot.png                        # Combined plot showing all processing stages
-├── cardiomyopathy-20132-0009.-LEAD II_filtered.txt   # Another sample ECG dataset
+
 ```
 ---
 
