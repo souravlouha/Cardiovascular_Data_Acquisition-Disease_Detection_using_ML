@@ -110,3 +110,21 @@ mean_rr = mean(RR_intervals);
 ```
 
 #
+
+
+![Slide 1](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/1.jpg)
+![Slide 2](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/2.jpg) 
+![Slide 3](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/3.jpg) 
+![Slide 4](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/4.jpg)
+![Slide 5](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/5.jpg) 
+![Slide 6](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/6.jpg) 
+![Slide 7](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/7.jpg)
+![Slide 8](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/8.jpg) 
+![Slide 9](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/9.jpg) 
+![Slide 10](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/10.jpg)
+![Slide 11](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/11.jpg)
+![Slide 12](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/12.jpg) 
+![Slide 13](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/13.jpg) 
+![Slide 14](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/14.jpg)
+![Slide 15](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/15.jpg) 
+![Slide 16](https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/PPG/PPG_presentation/16.jpg) 
