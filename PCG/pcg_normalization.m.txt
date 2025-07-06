@@ -1,0 +1,5 @@
+function [output_sig] = pcg_normalization(input_sig)
+x=input_sig;
+%y = zscore(x);
+y = (x-min(x))/(max(x)-min(x));
+output_sig = y;

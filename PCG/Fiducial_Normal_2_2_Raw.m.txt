@@ -1,0 +1,259 @@
+clc;
+close all;
+clear;
+workspace;
+format long g;
+format compact;
+fontSize = 25;
+
+% Load the PCG signal from a .txt file
+[file, path] = uigetfile('*.txt', 'Select a PCG signal file');
+[~, file_name, ~] = fileparts(file);
+if isequal(file, 0)
+    disp('User canceled file selection.');
+    return;
+end
+data = load(fullfile(path, file));
+fs = 250; % Sampling frequency in Hz
+
+% If the data file has two columns, select only the amplitude
+if size(data, 2) == 2
+    pcg_signal = data(:, 2);
+else
+    pcg_signal = data; % Single column dataset
+end
+
+% Prompt user for start and end indices for cutting the data
+start_idx = input(['Enter the start index for data cutting: (1 to ' num2str(length(data)) '): ']);
+end_idx = input(['Enter the end index for data cutting: (1 to ' num2str(length(data)) '): ']);
+
+% Convert inputs to integers and ensure valid range
+start_idx = max(1, round(start_idx));
+end_idx = min(length(data), round(end_idx));
+
+pcg_signal = pcg_signal(start_idx:end_idx);
+
+% Set time axis
+t = 1:length(pcg_signal); % X axis in sample number
+
+% Find all peaks
+[peaks, locs] = findpeaks(pcg_signal, 'MinPeakDistance', 1);
+
+% Compute Local Energy Envelope (using Moving RMS)
+window_size = 50; % Adjust based on signal
+energy_signal = sqrt(movmean(pcg_signal.^2, window_size)); % Moving RMS for local energy
+
+% Find peaks in the energy signal to get segmentation points
+[energy_peaks, energy_locs] = findpeaks(energy_signal, 'MinPeakDistance', 100, 'MinPeakHeight', mean(energy_signal) + 0.5 * std(energy_signal));
+
+% Define segmentation bands
+energy_locs = [0; energy_locs; length(pcg_signal)];
+beat_idx = (energy_locs(1:end-1) + energy_locs(2:end)) / 2;
+beat_idx = round(beat_idx);
+
+% Initialize arrays for S1, S2 regions, and M1, T1, A2, P2 peaks
+s_peaks = []; s_locs = [];
+s_peaks2 = []; s_locs2 = [];
+m1_peaks = []; m1_locs = [];
+t1_peaks = []; t1_locs = [];
+a2_peaks = []; a2_locs = [];
+p2_peaks = []; p2_locs = [];
+
+% Find S peaks (strongest peak per segmented window)
+for i = 1:(length(beat_idx)-1)
+    start_idx = beat_idx(i);
+    end_idx = beat_idx(i+1);
+    
+    % Find peaks in this segmented window
+    beat_peaks = peaks(locs >= start_idx & locs <= end_idx);
+    beat_locs = locs(locs >= start_idx & locs <= end_idx);
+    
+    % If peaks exist in this segmented window, find the highest one (S1)
+    threshold = 0.5 * max(beat_peaks); 
+    valid_idx = find(beat_peaks >= threshold, 1, 'first');
+    if ~isempty(valid_idx)
+        s_peaks = [s_peaks; beat_peaks(valid_idx)];
+        s_locs = [s_locs; beat_locs(valid_idx)];
+    end
+end
+
+% Assign Peaks to M1
+for i = 1:(length(s_peaks)-1)
+        m1_peaks = [m1_peaks; s_peaks(i)];
+        m1_locs = [m1_locs; s_locs(i)];
+        % Find T1 (next peak after M1)
+        next_peak_idx = find(locs > m1_locs(i), 1, 'first');
+        if ~isempty(next_peak_idx)
+            t1_peaks = [t1_peaks; peaks(next_peak_idx)];
+            t1_locs = [t1_locs; locs(next_peak_idx)];
+        end
+end
+
+for i = 1:length(t1_locs)
+    % Get current T1 location
+    t1_loc = t1_locs(i);
+    
+    % Define the band
+    band_start = t1_loc + 30;
+    next_beat = beat_idx(find(beat_idx > t1_loc, 1, 'first'));
+    
+    if isempty(next_beat)
+        continue; % No valid next beat
+    end
+    
+    band_end = next_beat - 1;
+    if band_start >= band_end
+        continue; % Invalid band
+    end
+    
+    % Get peaks within the band
+    band_peak_locs = locs(locs >= band_start & locs <= band_end);
+    band_peak_vals = peaks(locs >= band_start & locs <= band_end);
+    
+    if isempty(band_peak_vals)
+        continue; % No peaks found
+    end
+    
+    % Find A2: the maximum peak
+    [a2_val, a2_idx] = max(band_peak_vals);
+    a2_loc = band_peak_locs(a2_idx);
+    
+    a2_peaks = [a2_peaks; a2_val];
+    a2_locs = [a2_locs; a2_loc];
+    
+    % Find P2: immediate next peak after A2, with height ? 25% of A2
+    for j = a2_idx+1:length(band_peak_vals)
+        if band_peak_vals(j) >= 0.15 * a2_val
+            p2_peaks = [p2_peaks; band_peak_vals(j)];
+            p2_locs = [p2_locs; band_peak_locs(j)];
+            break; % only first valid peak
+        end
+    end
+end
+
+% Plot results
+
+% if you want x-axis of the plot in time values
+
+% t = (0:length(pcg_signal)-1) / fs; % X axis in time value
+% m1_locs = m1_locs / fs;
+% t1_locs = t1_locs / fs;
+% a2_locs = a2_locs / fs;
+% p2_locs = p2_locs / fs;
+
+% figure;
+fig = figure;
+set(fig, 'Units', 'inches', 'Position', [2 2 12 6]); % Width = 12 inches, Height = 6 inches
+
+plot(t, pcg_signal, 'b'); % Original PCG signal
+hold on;
+plot(m1_locs, m1_peaks, 'r*', 'MarkerSize', 10, 'LineWidth', 1.5); % M1 peaks (red)
+plot(t1_locs, t1_peaks, 'c*', 'MarkerSize', 10, 'LineWidth', 1.5); % T1 peaks (cyan)
+plot(a2_locs, a2_peaks, 'g*', 'MarkerSize', 10, 'LineWidth', 1.5); % A2 peaks (green)
+plot(p2_locs, p2_peaks, 'm*', 'MarkerSize', 10, 'LineWidth', 1.5); % P2 peaks (magenta)
+% Add vertical bars using line function
+%ylims = ylim; % Get current y-axis limits
+% line([beat_idx beat_idx], ylims, 'Color', 'k', 'LineStyle', '--', 'LineWidth', 1.5); % Start index
+%line([energy_locs energy_locs], ylims, 'Color', 'k', 'LineStyle', '--', 'LineWidth', 1.5); % Start index
+
+% Labels and title
+% xlabel('Sample Number');
+xlabel('Time (seconds)');
+ylabel('Amplitude');
+% title('PCG Signal with M1, T1, A2, and P2 Peaks Marked');
+if contains(file_name, '_')
+    file_name_change = strrep(file_name, '_', '\_'); % Escape underscores
+else
+    file_name_change = file_name; % Keep it unchanged
+end
+plot_title = sprintf('PCG Signal with M1, T1, A2, and P2 Peaks Marked for %s', file_name_change);
+title(plot_title);
+legend('Original PCG Signal', 'M1 Peaks (Red)', 'T1 Peaks (Cyan)', 'A2 Peaks (Green)', 'P2 Peaks (Magenta)');
+
+hold off;
+
+% Save the figure as a PNG file
+plot_file = fullfile(path, strcat(file_name, '_Detected_Peaks.png'));
+% saveas(gcf, plot_file);
+set(fig, 'PaperPositionMode', 'auto');
+print(fig, plot_file, '-dpng', '-r600');
+
+% save the fiducial parameters
+
+% Discard incomplete segment from the end
+compl = floor(length(energy_peaks)/2);
+
+m1_peaks = m1_peaks(1:compl); m1_locs = m1_locs(1:compl);
+t1_peaks = t1_peaks(1:compl); t1_locs = t1_locs(1:compl);
+a2_peaks = a2_peaks(1:compl); a2_locs = a2_locs(1:compl);
+p2_peaks = p2_peaks(1:compl); p2_locs = p2_locs(1:compl);
+
+% Convert locations to time (in seconds)
+m1_locs_time = m1_locs / fs;
+t1_locs_time = t1_locs / fs;
+a2_locs_time = a2_locs / fs;
+p2_locs_time = p2_locs / fs;
+
+% Compute Fiducial Parameters
+s1_locs_time = (m1_locs_time + t1_locs_time) / 2; % S1 Location
+s2_locs_time = (a2_locs_time + p2_locs_time) / 2; % S2 Location
+
+s1_s2_interval = s2_locs_time - s1_locs_time;
+m1_t1_interval = t1_locs_time - m1_locs_time;
+a2_p2_interval = p2_locs_time - a2_locs_time;
+
+systole_time = s1_s2_interval;
+diastole_time = zeros(size(s2_locs_time)); 
+for i = 1:length(s2_locs_time)-1
+    diastole_time(i) = s1_locs_time(i+1) - s2_locs_time(i);
+end
+
+% Dynamic File Naming
+excel_name = strcat(file_name, '_Fiducial_Parameters.xlsx');
+excel_file = fullfile(path, excel_name);
+text_name = strcat(file_name, '_Fiducial_Parameters.txt');
+text_file = fullfile(path, text_name);
+
+% Define headers for Excel 
+excel_headers = {'S1_Location_in_sec', 'S2_Location_in_sec', 'M1_Location_in_sec', 'M1_Amplitude', ...
+                 'T1_Location_in_sec', 'T1_Amplitude', 'A2_Location_in_sec', 'A2_Amplitude', ...
+                 'P2_Location_in_sec', 'P2_Amplitude', 'S1_S2_Interval_in_sec', 'Systole_Duration_in_sec', ...
+                 'Diastole_Duration_in_sec','M1_T1_Interval_in_sec', 'A2_P2_Interval_in_sec'};
+
+% Generate valid table column names
+valid_names = matlab.lang.makeValidName(excel_headers);
+% Create table for Excel with valid variable names
+fiducial_params = table(s1_locs_time, s2_locs_time, ...
+                        m1_locs_time, m1_peaks, t1_locs_time, t1_peaks, ...
+                        a2_locs_time, a2_peaks, p2_locs_time, p2_peaks, ...
+                        s1_s2_interval, systole_time, diastole_time, ...
+                        m1_t1_interval, a2_p2_interval,...
+                        'VariableNames', valid_names);
+                    
+% Save Data to Excel
+writetable(fiducial_params, excel_file);
+
+% Save Data to a Text File
+fileID = fopen(text_file, 'w'); % Open the text file for writing
+fprintf(fileID, 'PCG Fiducial Parameters for %s\n\n', file_name);
+
+% Print Column Names with Proper Spacing
+fprintf(fileID, '%-18s %-18s %-18s %-15s %-18s %-15s %-18s %-15s %-18s %-15s %-20s %-20s %-21s %-20s %-20s\n', ...
+        'S1 Location (s)', 'S2 Location (s)', 'M1 Location (s)', 'M1 Amplitude', 'T1 Location (s)', 'T1 Amplitude', ...
+        'A2 Location (s)', 'A2 Amplitude', 'P2 Location (s)', 'P2 Amplitude', 'S1-S2 Interval (s)', 'Systole Duration (s)', ...
+        'Diastole Duration (s)', 'M1-T1 Interval (s)', 'A2-P2 Interval (s)');
+
+% Print Data Rows with Fixed Width
+for i = 1:length(s1_locs_time)
+    fprintf(fileID, '%-18.4f %-18.4f %-18.4f %-15.4f %-18.4f %-15.4f %-18.4f %-15.4f %-18.4f %-15.4f %-20.4f %-20.4f %-21.4f %-20.4f %-20.4f\n', ...
+            s1_locs_time(i), s2_locs_time(i), m1_locs_time(i), m1_peaks(i), t1_locs_time(i), t1_peaks(i), ...
+            a2_locs_time(i), a2_peaks(i), p2_locs_time(i), p2_peaks(i), ...
+            s1_s2_interval(i), systole_time(i), diastole_time(i), ...
+            m1_t1_interval(i), a2_p2_interval(i));
+end
+
+fclose(fileID); % Close the file
+
+% Display Message
+disp(['Fiducial parameters saved to "', excel_name, '" and "', text_name, '".']);
+

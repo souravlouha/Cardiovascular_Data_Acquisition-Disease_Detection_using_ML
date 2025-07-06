@@ -1,0 +1,148 @@
+% =====================================================
+% Signal Processing: Audio Analysis from '3vCAD.wav'
+% =====================================================
+
+% --- Step 1: Read the audio file ---
+filename = '3vCAD.wav';
+[data, fs] = audioread(filename);  % Load audio data
+
+% --- Step 2: Play the original signal (mono) ---
+soundsc(data(:,1), fs);
+sound(data(:,1), fs);
+
+% --- Step 3: Plot original signal ---
+figure;
+plot(data(:,1), 'b');
+title('Original Audio Signal');
+xlabel('Sample Index');
+ylabel('Amplitude');
+grid on;
+
+% --- Step 4: Downsample to 2000 Hz ---
+fs1 = 2000;
+one = resample(data(:,1), fs1, fs);
+
+figure;
+plot(one, 'g');
+title('Downsampled Signal (2 kHz)');
+xlabel('Sample Index');
+ylabel('Amplitude');
+grid on;
+
+% --- Step 5: Apply Bandpass Filter (20 Hz - 950 Hz) ---
+low = 20;
+high = 950;
+one1 = bandpass(one, [low, high], fs1);
+
+figure;
+plot(one1, 'r');
+title('Bandpass Filtered Signal (20–950 Hz)');
+xlabel('Sample Index');
+ylabel('Amplitude');
+grid on;
+
+% --- Step 6: Apply Lowpass Filter (< 20 Hz) ---
+one2 = lowpass(one, low, fs1);
+
+figure;
+plot(one2, 'm');
+title('Lowpass Filtered Signal (< 20 Hz)');
+xlabel('Sample Index');
+ylabel('Amplitude');
+grid on;
+
+% --- Step 7: Frequency Domain Analysis (FFT) ---
+signal = one1;
+N = length(signal);
+f_axis = fs1 * (0:(N/2)) / N;
+Y_mag = fft(signal);
+Y_mag = abs(Y_mag(1:N/2+1));  % One-sided magnitude spectrum
+
+figure;
+plot(f_axis, Y_mag, 'k');
+title('Frequency Spectrum of the Signal');
+xlabel('Frequency (Hz)');
+ylabel('Amplitude');
+grid on;
+ylim([0, 400]);
+
+% --- Step 8: Optional - Schmidt Spike Removal ---
+if exist('schmidt_spike_removal', 'file')
+    one2 = schmidt_spike_removal(one1, fs1);
+    figure;
+    plot(one2, 'c');
+    title('After Spike Removal');
+    xlabel('Sample Index');
+    ylabel('Amplitude');
+    grid on;
+end
+
+% --- Step 9: Optional - Normalization ---
+if exist('pcg_normalization', 'file')
+    one3 = pcg_normalization(one2);
+    figure;
+    plot(one3, 'y');
+    title('Normalized Signal');
+    xlabel('Sample Index');
+    ylabel('Amplitude');
+    grid on;
+end
+
+% --- Step 10: Force Normalization (Redundant Call, Still Allowed) ---
+one3 = pcg_normalization(one2);
+min_val = min(one3);
+max_val = max(one3);
+disp(['Min: ', num2str(min_val)]);
+disp(['Max: ', num2str(max_val)]);
+
+% Plot normalized signal
+figure;
+plot(one3, 'LineWidth', 1.2);
+title('Normalized Signal');
+xlabel('Sample Index');
+ylabel('Amplitude');
+grid on;
+
+% --- Step 11: PSD Analysis using PSDseg ---
+[psd1, freq1] = PSDseg(one3, fs1, 20);
+
+figure;
+plot(freq1, 10*log(psd1), 'LineWidth', 1.5);
+title('Power Spectral Density (Custom PSDseg)');
+xlabel('Frequency (Hz)');
+ylabel('Power/Frequency (dB/Hz)');
+grid on;
+
+% --- Step 12: Spectrogram ---
+figure;
+specgram(one3);
+title('Spectrogram');
+xlabel('Time');
+ylabel('Frequency');
+caxis([-60 40]);
+colorbar;
+
+
+sub_one = resample(data(:,1),fs1,fs);
+sub_two = resample(data(:,2),fs1,fs);
+sub_three = resample(data(:,3),fs1,fs);
+sub_four = resample(data(:,4),fs1,fs);
+
+figure;
+subplot(4,1,1)
+plot(sub_one)
+ylabel("1")
+
+subplot(4,1,2)
+plot(sub_two)
+ylabel("2")
+
+subplot(4,1,3)
+plot(sub_three)
+ylabel("3")
+
+subplot(4,1,4)
+plot(sub_four)
+ylabel("4")
+
+
