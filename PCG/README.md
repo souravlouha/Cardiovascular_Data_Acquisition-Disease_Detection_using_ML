@@ -51,6 +51,28 @@ Each cardiac cycle in a PCG contains:
 
 ---
 
+### 📁 PCG/ – Phonocardiogram Signal Analysis
+```
+PCG/
+├── PCG_presentation/                          # Presentation files related to PCG workflow
+├── 1vCAD.wav                                  # PCG audio sample - CAD patient (variant 1)
+├── 2vCAD.wav                                  # PCG audio sample - CAD patient (variant 2)
+├── 3vCAD.wav                                  # PCG audio sample - CAD patient (variant 3)
+├── Normal2_2_Raw.txt                          # Raw PCG signal (normal case)
+├── Normal2_2_Raw_Detected_Peaks.png           # Visualization of detected fiducial points
+├── Normal2_2_Raw_Fiducial_Parameters.txt      # Extracted feature values (text format)
+├── Normal2_2_Raw_Fiducial_Parameters.xlsx     # Extracted feature values (Excel format)
+├── Fiducial_Normal_2_2_Raw.m.txt              # MATLAB script for detecting fiducial points
+├── PSDseg.m.txt                               # Power Spectral Density segmentation script
+├── pcg_normalization.m.txt                    # MATLAB script for signal normalization
+├── schmidt_spike_removal.m.txt                # Script to remove spike artifacts
+├── tutorial1.m.txt                            # Sample tutorial/demo script
+├── README.md                                  # Project documentation (signal info, usage)
+
+```
+
+-----
+
 ### 🔬 Applications
 
 - **Detect Coronary Artery Disease (CAD)** and heart murmurs
