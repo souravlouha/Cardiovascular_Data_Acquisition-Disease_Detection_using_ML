@@ -145,6 +145,124 @@ Let us know if you'd like real-time demos, additional datasets, or Python conver
 
 
 
+-------
+
+
+<!-- Generated HTML embed with width="950" -->
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-001.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-002.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-003.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-004.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-005.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-006.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-007.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-008.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-009.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-010.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-011.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-012.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-013.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-014.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-015.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-016.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-017.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-018.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-019.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-020.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-021.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-022.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-023.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-024.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-025.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-026.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-027.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-028.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-029.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-030.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-031.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-032.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-033.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-034.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-035.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-036.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-037.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-038.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-039.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-040.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-041.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-042.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-043.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-044.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-045.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-046.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-047.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-048.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-049.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-050.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-051.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-052.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-053.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-054.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-055.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-056.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-057.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-058.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-059.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-060.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-061.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-062.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-063.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-064.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-065.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-066.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-067.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-068.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-069.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-070.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-071.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-072.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-073.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-074.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-075.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-076.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-077.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-078.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-079.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-080.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-081.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-082.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-083.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-084.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-085.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-086.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-087.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-088.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-089.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-090.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-091.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-092.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-093.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-094.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-095.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-096.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-097.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-098.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-099.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-100.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-101.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-102.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-103.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-104.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-105.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-106.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-107.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-108.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-109.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-110.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-111.png" width="950"/>
+<img src="https://github.com/souravlouha/Cardiovascular_Data_Acquisition-Disease_Detection_using_ML/blob/main/SPARC_WorkShop/Presentation/SPARC%20Workshop_slides-112.png" width="950"/>
+
+
 
 
 
